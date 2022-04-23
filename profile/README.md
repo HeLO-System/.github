@@ -87,12 +87,12 @@ Wow! What a match!
     Factor | Team A | Team B
     -------|--------|-------
     Number of matches | 20 | 40
-    Number of players | log<sub>20</sub>45/50+1 | log<sub>40</sub>45/50+1
+    Number of players | log<sub>20</sub>(45/50)+1 | log<sub>40</sub>45/50+1
     Game score (normalized) | 0/5 | 5/5
 5. New scores:
 
-    Team A: 746 + 20 * 1.2 * (log<sub>20</sub>45/50+1) * (0/5-0.681) ≈ 730<br>
-    Team B: 613 + 40 * 1.2 * (log<sub>40</sub>45/50+1) * (5/5-0.681) ≈ 645
+    Team A: 746 + 20 * 1.2 * (log<sub>20</sub>(45/50)+1) * (0/5-0.681) ≈ 730<br>
+    Team B: 613 + 40 * 1.2 * (log<sub>40</sub>(45/50)+1) * (5/5-0.681) ≈ 645
 
 ## What if more than one team plays together?
 This is called a cooperation. Cooperations can consist of teams fielding
