@@ -87,7 +87,7 @@ Wow! What a match!
     Factor | Team A | Team B
     -------|--------|-------
     Number of matches | 20 | 40
-    Number of players | log<sub>20</sub>(45/50)+1 | log<sub>40</sub>45/50+1
+    Number of players | log<sub>20</sub>(45/50)+1 | log<sub>40</sub>(45/50)+1
     Game score (normalized) | 0/5 | 5/5
 5. New scores:
 
