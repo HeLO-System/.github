@@ -28,7 +28,7 @@ The win probability is calculated using the score difference between both teams:
 For example, team A has a score of 734 and team B has a score of 579.
 The difference is D = 734 – 579 = 155. Plugging this value in our magic math
 black box will lead to a probability of winning of 70.8% for team A. The
-probability for team B is simply the counter-probability: 1 – 0.708 = 0.292 => 29.2%.
+probability for team B is simply the counter-probability: 1 – 0.708 = 0.292.
 
 ### Detailed explanation
 
@@ -36,7 +36,7 @@ The probability is calculated by an integral, which can be simplified
 to the [Gaussian error function](https://en.wikipedia.org/wiki/Error_function). I added 400 as denominator to cap the maximum
 probability of winning to be close to one at some value between a score
 difference of 400 and 500. Otherwise the score gain or loss would be either
-too significant or irrelevant.
+too significant or irrelevant. For a more detailed explanation (including some math) check ![this](https://github.com/Soxxes/HeLO-System) out.
 
 ## How is the new HeLO-Score calculated?
 
@@ -87,12 +87,14 @@ Wow! What a match!
     Factor | Team A | Team B
     -------|--------|-------
     Number of matches | 20 | 40
-    Number of players | log<sub>20</sub>(45/50)+1 | log<sub>40</sub>(45/50)+1
+    Number of players | log<sub>20</sub>(45/50)+1 | log<sub>40</sub>(45/50)+1 
     Game score (normalized) | 0/5 | 5/5
 5. New scores:
 
-    Team A: 746 + 20 * 1.2 * (log<sub>20</sub>(45/50)+1) * (0/5-0.681) ≈ 730<br>
-    Team B: 613 + 40 * 1.2 * (log<sub>40</sub>(45/50)+1) * (5/5-0.681) ≈ 645
+    <!-- Team A: 746 + 20 * 1.2 * (log<sub>20</sub>(45/50)+1) * (0/5-0.681) ≈ 730<br>-->
+    Team A: $H^\prime_\mathrm{A} \hspace{1mm} = \hspace{1mm} 746 \hspace{1mm} + \hspace{1mm} 20 \hspace{1mm}\cdot \hspace{1mm} 1.2 \hspace{1mm}\cdot \hspace{1mm} (log_{20} \frac{45}{50} \hspace{1mm} + \hspace{1mm} 1) (\frac{0}{5} \hspace{1mm} - \hspace{1mm} 0.681) \hspace{1mm} \approx \hspace{1mm} 730$<br>
+    <!-- Team B: 613 + 40 * 1.2 * (log<sub>40</sub>(45/50)+1) * (5/5-0.681) ≈ 645-->
+    Team B: $H^\prime_\mathrm{B} \hspace{1mm} = \hspace{1mm} 613 \hspace{1mm} + \hspace{1mm} 40 \hspace{1mm}\cdot \hspace{1mm} 1.2 \hspace{1mm} \cdot \hspace{1mm}(log_{40} \frac{45}{50} \hspace{1mm} + \hspace{1mm} 1) (\frac{5}{5} \hspace{1mm} - \hspace{1mm} 0.319) \hspace{1mm} \approx \hspace{1mm} 645$
 
 ## What if more than one team plays together?
 This is called a cooperation. Cooperations can consist of teams fielding
