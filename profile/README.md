@@ -1,6 +1,6 @@
 # HeLO-System
 
-HeLO (Hell Let Loose Elo Score) is a system designed by Soxxes to rank competitive Clans playing the realistic multiplayer World War Two combined arms first person shooter [Hell Let Loose](https://store.steampowered.com/app/686810/Hell_Let_Loose/).
+HeLO (Hell Let Loose Elo Score) is a system designed by Soxxes to rank competitive Clans playing the realistic multiplayer World War Two combined arms first person shooter [Hell Let Loose](https://store.steampowered.com/app/686810/Hell_Let_Loose/). The original repository with all the calculations can be found [here](https://github.com/Soxxes/HeLO-System).
 
 ## What is Elo?
 
