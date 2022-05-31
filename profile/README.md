@@ -6,7 +6,7 @@ HeLO (Hell Let Loose Elo Score) is a system designed by Soxxes to rank competiti
 
 The Elo rating system is a method for calculating the relative skill levels of players in zero-sum games such as chess. It is named after its creator Arpad Elo, a Hungarian-American physics professor. 
 If you have ever played chess online or in a competitive tournament you might be already familiar with the concept.
-If not have you can read more about the system on [Wikipedia](https://en.wikipedia.org/wiki/Elo_rating_system).
+If not you can read more about the system on [Wikipedia](https://en.wikipedia.org/wiki/Elo_rating_system).
 
 The system was adjusted slightly and adapted to fit the requirements of ranking Hell Let Loose Clans. 
 
